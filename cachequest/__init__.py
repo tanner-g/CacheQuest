@@ -11,11 +11,11 @@ def index():
 @app.route("/check/<int:question>", methods=['POST'])
 def check(question):
     if question == 1:
-        return check_answer("brownstoat")
+        return check_answer("pfsense")
     elif question == 2:
-        return check_answer("makerbot")
+        return check_answer("pla")
     elif question == 3:
-        return check_answer("jolt")
+        return check_answer("lola")
     else:
         return jsonify({"success": False}), 400
 
