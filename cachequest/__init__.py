@@ -16,6 +16,10 @@ def check(question):
         return check_answer("pla")
     elif question == 3:
         return check_answer("lola")
+    elif question == 4:
+        return check_answer("make")
+    elif question == 5:
+        return check_answer("1-wire")
     else:
         return jsonify({"success": False}), 400
 
